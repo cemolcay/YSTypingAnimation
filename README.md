@@ -6,7 +6,7 @@ customisable *is typing* animation view written in swift.
 Demo
 ----
 
-![alt tag]()
+![alt tag](https://raw.githubusercontent.com/cemolcay/YSTypingAnimation/master/demo.gif)
 
 Usage
 -----
