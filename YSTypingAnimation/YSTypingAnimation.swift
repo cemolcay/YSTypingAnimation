@@ -18,11 +18,11 @@ struct YSTypingAnimationAppearance {
     var jumpDuration: NSTimeInterval!
     
     init () {
-        dotSize = 15
+        dotSize = 30
         dotSpacing = 5
         dotColor = UIColor.blackColor()
         dotCount = 3
-        jumpHeight = 5
+        jumpHeight = 10
         jumpDuration = 0.35
     }
 }
@@ -75,7 +75,7 @@ class YSTypingAnimation: UIView {
     var jumpAnim: CABasicAnimation {
         get {
             let anim = CABasicAnimation(keyPath: "position.y")
-            anim.fromValue = 0
+            anim.fromValue = appearance.dotSize/2
             anim.toValue = appearance.jumpHeight
             anim.duration = appearance.jumpDuration
             anim.repeatCount = Float.infinity
